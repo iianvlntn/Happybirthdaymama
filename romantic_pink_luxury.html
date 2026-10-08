@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Romantic Pink Luxury</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,sans-serif;background:#0b0b0b;color:#fff;overflow-x:hidden}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),url('foto5.jpeg') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero h1{font-size:clamp(3rem,8vw,7rem);color:#ffb6c1}
+.hero p{margin-top:15px;font-size:1.2rem}
+.btn{display:inline-block;margin-top:25px;padding:14px 30px;background:#ff4d6d;color:#fff;border-radius:999px;text-decoration:none}
+section{max-width:1300px;margin:auto;padding:80px 24px}
+.card{background:rgba(255,255,255,.08);backdrop-filter:blur(15px);padding:40px;border-radius:28px;line-height:1.9}
+.slider img{width:100%;height:600px;object-fit:cover;border-radius:24px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.gallery img{width:100%;height:320px;object-fit:cover;border-radius:18px}
+.music{background:#fff;color:#222;padding:30px;border-radius:24px;text-align:center}
+footer{text-align:center;padding:40px}
+</style>
+</head>
+<body>
+<div class="hero">
+<div>
+<h1>Happy Birthday ❤️</h1>
+<p>For My Everything</p>
+<a href="#letter" class="btn">Open My Letter 💌</a>
+</div>
+</div>
+
+<section id="letter">
+<div class="card">
+<h2>Untuk Kamu 💖</h2>
+<p>Halooo pretty girl, happy birthday yaaa! Semoga semua impianmu tercapai, sehat selalu, dan bahagia setiap hari.</p>
+<p>Terima kasih sudah hadir dan memberi banyak warna dalam hidupku. Aku bersyukur bisa mengenalmu dan membuat kenangan bersamamu.</p>
+<h3>I Love You Always ❤️</h3>
+</div>
+</section>
+
+<section>
+<h2>Momen Kita ✨</h2><br>
+<div class="slider"><img id="slide" src="foto1.jpeg"></div>
+</section>
+
+<section>
+<h2>Gallery 📸</h2><br>
+<div class="gallery">
+<img src="foto1.jpeg"><img src="foto2.jpeg"><img src="foto3.jpeg">
+<img src="foto4.jpeg"><img src="foto5.jpeg"><img src="foto6.jpeg">
+</div>
+</section>
+
+<section>
+<div class="music">
+<h2>Lagu Untuk Kamu 🎶</h2><br>
+<audio controls>
+<source src="sempurna.mp3" type="audio/mpeg">
+</audio>
+</div>
+</section>
+
+<footer>Happy Birthday 💕</footer>
+
+<script>
+const imgs=['foto1.jpeg','foto2.jpeg','foto3.jpeg'];
+let i=0;
+setInterval(()=>{
+i=(i+1)%imgs.length;
+document.getElementById('slide').src=imgs[i];
+},3000);
+</script>
+</body>
+</html>
